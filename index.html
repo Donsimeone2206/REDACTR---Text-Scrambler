@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REDACTR - Text Scrambler</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>REDACTR - Text Scrambler</h1>
+      <textarea id="inputText" placeholder="Enter text here..."></textarea>
+      <input
+        type="text"
+        id="wordsToScramble"
+        placeholder="Words to scramble (separated by space)"
+      />
+      <input
+        type="text"
+        id="scrambleWith"
+        placeholder="Scramble with (default: *)"
+      />
+      <button id="redactButton">Redact Now</button>
+      <div id="outputContainer">
+        <h2>Scrambled Text</h2>
+        <p id="outputText"></p>
+      </div>
+      <div id="stats">
+        <p id="totalWordsScanned"></p>
+        <p id="totalWordsMatched"></p>
+        <p id="totalCharsScrambled"></p>
+        <p id="executionTime"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
